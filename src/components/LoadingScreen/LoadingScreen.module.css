@@ -1,0 +1,91 @@
+.screen,
+.opening-screen {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  pointer-events: none;
+}
+
+@keyframes loading {
+  0% {
+    height: 0%;
+    top: 50%;
+  }
+  10% {
+    height: 40%;
+    top: 30%;
+  }
+  30% {
+    height: 40%;
+    top: 30%;
+    transform: rotate(720deg);
+  }
+  60% {
+    height: 40%;
+    top: 30%;
+    transform: rotate(0deg);
+  }
+  100% {
+    height: 100%;
+    top: 0%;
+  }
+}
+
+.screen::after,
+.screen::before {
+  content: '';
+  width: 1px;
+  height: 0%;
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 1px);
+  background-color: var(--white);
+  animation: loading 3s ease both;
+}
+
+.opening-screen {
+  background-color: transparent;
+}
+
+@keyframes open-left {
+  0% {
+    width: 50%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes open-right {
+  0% {
+    left: 50%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.opening-screen::after,
+.opening-screen::before {
+  content: '';
+  position: absolute;
+  top: 0%;
+  height: 100%;
+  background-color: var(--black);
+}
+
+.opening-screen::before {
+  left: 0;
+  border-right: 1px solid var(--white);
+  animation: open-left 0.5s ease-in both;
+}
+
+.opening-screen::after {
+  left: 50%;
+  width: 50%;
+  border-left: 1px solid var(--white);
+  animation: open-right 0.5s ease-in both;
+}

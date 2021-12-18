@@ -1,0 +1,11 @@
+.screen-divider {
+  height: 100vh;
+  background-color: var(--whitesmoke);
+  overflow: hidden;
+}
+
+@media screen and (min-width: 900px) {
+  .screen-divider {
+    display: flex;
+  }
+}

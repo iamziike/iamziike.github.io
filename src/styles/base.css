@@ -1,0 +1,18 @@
+*::selection {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: var(--primary-font--light), 'Courier New', sans-serif;
+  font-size: var(--default-font-size);
+}

@@ -1,0 +1,27 @@
+:root {
+  /* colors-placeholders */
+  --white: hsl(0, 0%, 100%);
+  --whitesmoke: hsl(0, 0%, 97%);
+  --black: hsl(0, 0%, 0%);
+  --yellow: hsl(60, 100%, 57%);
+  --orange: hsl(39, 100%, 50%);
+
+  /* placeholders */
+
+  /* font-placeholders */
+  --primary-font: Source_Code_Pro-Medium;
+  --primary-font--bold: Source_Code_Pro-Bold;
+  --primary-font--light: Source_Code_Pro-Light;
+
+  /* font-size */
+  --default-font-size: 1rem;
+
+  /* others */
+  --container-padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  :root {
+    --default-font-size: 1.2rem;
+  }
+}

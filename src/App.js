@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import LoadingScreen from './components/LoadingScreen/LoadingScreen';
+import ScreenDivider from './components/ScreenDivider/ScreenDivider';
+import './styles/fonts.css';
+import './styles/reset.css';
+import './styles/variables.css';
+import './styles/base.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ScreenDivider />
+      <LoadingScreen />
+    </>
   );
-}
+};
 
 export default App;
