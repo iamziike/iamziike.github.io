@@ -1,8 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import Home from '../../routes/Home/Home';
 import Contact from '../../routes/Contact/Contact';
@@ -11,7 +7,7 @@ import styles from './ScreenDivider.module.css';
 
 const ScreenDivider = () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className={styles['screen-divider']}>
         <Navbar />
         <Routes>

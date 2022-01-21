@@ -12,10 +12,9 @@ const HeroText = () => {
           who loves to code and build stuffs
         </div>
         <div className={styles['find-me']}>
-          <a href='https://www.linkedin.com/in/ziikechuks/'>
-            linkedin
-          </a>
+          <a href='https://www.linkedin.com/in/ziikechuks/'>linkedin</a>
           <a href='https://github.com/iamziike/'>github</a>
+          <a href='../../../assets/ziike_resume.pdf'>resume</a>
         </div>
       </div>
     </div>
