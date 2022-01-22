@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.276e5dc7.chunk.css",
-    "main.js": "/static/js/main.56e7fddf.chunk.js",
-    "main.js.map": "/static/js/main.56e7fddf.chunk.js.map",
+    "main.css": "/static/css/main.c9f43a32.chunk.css",
+    "main.js": "/static/js/main.0b93ebac.chunk.js",
+    "main.js.map": "/static/js/main.0b93ebac.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3f1ab8a7.js",
     "runtime-main.js.map": "/static/js/runtime-main.3f1ab8a7.js.map",
-    "static/js/2.674018a3.chunk.js": "/static/js/2.674018a3.chunk.js",
-    "static/js/2.674018a3.chunk.js.map": "/static/js/2.674018a3.chunk.js.map",
+    "static/js/2.08ffc070.chunk.js": "/static/js/2.08ffc070.chunk.js",
+    "static/js/2.08ffc070.chunk.js.map": "/static/js/2.08ffc070.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.276e5dc7.chunk.css.map": "/static/css/main.276e5dc7.chunk.css.map",
-    "static/js/2.674018a3.chunk.js.LICENSE.txt": "/static/js/2.674018a3.chunk.js.LICENSE.txt",
-    "static/media/fonts.css": "/static/media/SourceCodePro-SemiBold.4d4c53c0.ttf",
-    "static/media/HeroImage.module.css": "/static/media/me.7d52b887.jpg"
+    "static/css/main.c9f43a32.chunk.css.map": "/static/css/main.c9f43a32.chunk.css.map",
+    "static/js/2.08ffc070.chunk.js.LICENSE.txt": "/static/js/2.08ffc070.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/SourceCodePro-SemiBold.4d4c53c0.ttf",
+    "static/media/HeroImage.module.css": "/static/media/me.7d52b887.jpg",
+    "static/media/ziike_resume.5fa3ff13.pdf": "/static/media/ziike_resume.5fa3ff13.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.3f1ab8a7.js",
-    "static/js/2.674018a3.chunk.js",
-    "static/css/main.276e5dc7.chunk.css",
-    "static/js/main.56e7fddf.chunk.js"
+    "static/js/2.08ffc070.chunk.js",
+    "static/css/main.c9f43a32.chunk.css",
+    "static/js/main.0b93ebac.chunk.js"
   ]
 }
