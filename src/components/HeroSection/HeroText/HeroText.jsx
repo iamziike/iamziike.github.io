@@ -1,5 +1,6 @@
 import DescriptionList from './DescriptionList/DescriptionList';
 import styles from './HeroText.module.css';
+import resume from '../../../assets/ziike_resume.pdf';
 
 const HeroText = () => {
   return (
@@ -14,7 +15,7 @@ const HeroText = () => {
         <div className={styles['find-me']}>
           <a href='https://www.linkedin.com/in/ziikechuks/'>linkedin</a>
           <a href='https://github.com/iamziike/'>github</a>
-          <a href='../../../assets/ziike_resume.pdf'>resume</a>
+          <a href={resume}>resume</a>
         </div>
       </div>
     </div>

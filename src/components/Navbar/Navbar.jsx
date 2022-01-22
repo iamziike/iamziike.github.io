@@ -11,22 +11,13 @@ const Navbar = () => {
 
   const handleLinkClick = (event) => {
     const { target } = event;
-    if (
-      !target.closest('li')?.classList.contains(styles.link)
-    )
-      return;
+    if (!target.closest('li')?.classList.contains(styles.link)) return;
     setIsOpen(false);
   };
 
   return (
-    <nav
-      className={`${styles.navbar} navbar--default-theme`}
-    >
-      <div
-        className={`${styles.logo} ${
-          isOpen ? styles['logo--open'] : ''
-        }`}
-      >
+    <nav className={`${styles.navbar} navbar--default-theme`}>
+      <div className={`${styles.logo} ${isOpen ? styles['logo--open'] : ''}`}>
         ZK
       </div>
       <div
@@ -41,16 +32,17 @@ const Navbar = () => {
         <div></div>
       </div>
       <ul
-        className={`${styles.links} ${
-          isOpen ? '' : styles['links--close']
-        }`}
+        className={`${styles.links} ${isOpen ? '' : styles['links--close']}`}
         onClick={handleLinkClick}
       >
         <li className={styles.link}>
           <Link to='/'>Home</Link>
         </li>
         <li className={styles.link}>
-          <Link to='/contact'>Contact</Link>
+          <Link to='/projects'>Projects</Link>
+        </li>
+        <li className={styles.link}>
+          <Link to='/contact'>Hire Me</Link>
         </li>
       </ul>
     </nav>

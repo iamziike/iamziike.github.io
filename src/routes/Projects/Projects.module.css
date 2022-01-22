@@ -1,0 +1,41 @@
+.projects {
+  text-align: center;
+}
+
+.projects__list {
+  padding: var(--container-padding);
+  display: flex;
+  gap: 50px;
+  height: 80vh;
+  align-items: center;
+
+  flex-wrap: nowrap;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.projects__list::-webkit-scrollbar {
+  display: none;
+}
+
+.project {
+  display: inline-block;
+  flex-wrap: nowrap;
+  opacity: 0.8;
+  transition: opacity 0.5s;
+}
+
+.project:hover {
+  opacity: 1;
+}
+
+.project img {
+  border-radius: 5px;
+  max-width: 400px;
+  max-height: 300px;
+}
+
+.project__title {
+  margin: 10px 0 30px;
+}

@@ -2,11 +2,7 @@ import { useState } from 'react';
 import styles from './DescriptionList.module.css';
 
 const DescriptionList = () => {
-  const descriptions = [
-    'a beardy dude',
-    'a web developer',
-    'an afro superman',
-  ];
+  const descriptions = ['a beardy dude', 'a web developer', 'an afro superman'];
 
   const handleAnimationIteration = () => {
     setVisibleIndex((prev) =>
