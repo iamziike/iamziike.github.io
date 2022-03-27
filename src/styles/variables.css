@@ -5,22 +5,28 @@
   --black: hsl(0, 0%, 0%);
   --yellow: hsl(60, 100%, 57%);
   --orange: hsl(39, 100%, 50%);
+  --salmon: hsl(3, 97%, 71%);
+  --coral-pink: hsl(16, 100%, 70%);
+  --brown: hsl(0, 59%, 41%);
 
   /* placeholders */
 
   /* font-placeholders */
   --primary-font: Source_Code_Pro-Medium;
-  --primary-font--bold: Source_Code_Pro-Bold;
   --primary-font--light: Source_Code_Pro-Light;
+  --primary-font--bold: Source_Code_Pro-Bold;
 
   /* font-size */
   --default-font-size: 1rem;
 
   /* others */
-  --container-padding: 0.5rem 1rem;
+  --container-padding-y: 0.5rem;
+  --container-padding-x: 1rem;
+  --container-padding: var(--container-padding-y) var(--container-padding-x);
+  --draggy: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
   :root {
     --default-font-size: 1.2rem;
   }

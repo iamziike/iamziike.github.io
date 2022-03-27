@@ -1,8 +1,8 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import LoadingScreen from './components/LoadingScreen/LoadingScreen';
-import ScreenDivider from './components/ScreenDivider/ScreenDivider';
 import './App.css';
+import LoadingScreen from './components/UI/LoadingScreen/LoadingScreen';
+import ScreenDivider from './components/UI/ScreenDivider/ScreenDivider';
 
 const App = () => {
   return (

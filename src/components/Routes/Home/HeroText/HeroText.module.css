@@ -1,0 +1,39 @@
+.hero-text {
+  font-family: var(--primary-font--bold);
+}
+
+.hero-text__header {
+  font-size: 4rem;
+}
+
+.find-me > * {
+  padding-right: 10px;
+  transition: color 0.3s;
+}
+
+.find-me > *:hover {
+  color: var(--brown);
+}
+
+@media (max-width: 900px) {
+  .hero-text__header {
+    margin: 20px auto;
+  }
+
+  .details {
+    margin: 20px 0;
+  }
+
+  .find-me {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-text__header {
+    line-height: 100%;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    font-size: 2rem;
+  }
+}
