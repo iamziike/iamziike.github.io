@@ -6,12 +6,13 @@ import useClientStorage from '../../../hooks/useClientStorage';
 
 const LoadingScreen = () => {
   const location = useLocation();
-  const [className, setClassName] = useState('');
+  const [className, setClassName] = useState();
 
   const { get, set } = useClientStorage();
   useEffect(() => {
     const action = { type: 'session', key: 'hasAnimatedBefore' };
     const hasAnimatedBefore = get(action.type, action.key);
+    console.log(hasAnimatedBefore);
     if (hasAnimatedBefore) return;
     setClassName(styles.screen);
     set(action.type, action.key, true);
