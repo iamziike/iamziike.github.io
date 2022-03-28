@@ -12,7 +12,6 @@
 }
 
 .screen-divider > *:nth-child(2) {
-  width: 100%;
   padding: 0 var(--container-padding-x);
 }
 

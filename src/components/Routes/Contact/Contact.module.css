@@ -1,10 +1,9 @@
 .contact-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 20px;
-  width: 70%;
   margin: 0 auto;
+  width: 70%;
 }
 
 .contact-form > * {
@@ -34,13 +33,13 @@
   color: var(--white);
 }
 
-.contact-form button:hover {
-  color: var(--black);
-  background-color: transparent;
-}
-
 .contact-form button {
   align-self: flex-end;
+}
+
+.contact-form button:hover {
+  background-color: transparent;
+  color: var(--black);
 }
 
 .submit-notify {
@@ -48,19 +47,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-@media (min-width: 900px) {
-  .contact-form {
-    height: 100%;
-    justify-content: center;
-  }
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  align-items: center;
 }

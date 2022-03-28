@@ -1,21 +1,20 @@
 import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
 
-import styles from './LoadingScreen.module.css';
+import styles from './EntranceScreen.module.css';
 import useClientStorage from '../../../hooks/useClientStorage';
 
-const LoadingScreen = () => {
-  const location = useLocation();
+const EntranceScreen = () => {
   const [className, setClassName] = useState();
-
   const { get, set } = useClientStorage();
+
   useEffect(() => {
     const action = { type: 'session', key: 'hasAnimatedBefore' };
     const hasAnimatedBefore = get(action.type, action.key);
-    console.log(hasAnimatedBefore);
-    if (hasAnimatedBefore) return;
-    setClassName(styles.screen);
-    set(action.type, action.key, true);
+
+    if (!hasAnimatedBefore) {
+      setClassName(styles.screen);
+      set(action.type, action.key, true);
+    }
   }, []);
 
   const handleAnimationEnd = () => {
@@ -23,12 +22,12 @@ const LoadingScreen = () => {
   };
 
   return (
-    <div>
-      {location.pathname === '/' && (
+    <>
+      {className && (
         <div onAnimationEnd={handleAnimationEnd} className={className}></div>
       )}
-    </div>
+    </>
   );
 };
 
-export default LoadingScreen;
+export default EntranceScreen;
