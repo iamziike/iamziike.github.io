@@ -1,6 +1,6 @@
 import classes from './HeroText.module.css';
 import DescriptionList from './DescriptionList/DescriptionList';
-import resume from '../../../../assets/ziike_resume.pdf';
+import resume from '../../../../assets/wisdom_alajemba_resume.pdf';
 
 const HeroText = () => {
   return (
